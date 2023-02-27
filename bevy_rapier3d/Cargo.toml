@@ -38,8 +38,7 @@ headless = [ ]
 async-collider = [ ]
 
 [dependencies]
-bevy = { path = "../../bevy", default-features = false, features = ["bevy_asset", "bevy_scene"] }
-# bevy = { version = "0.9.0", default-features = false, features = ["bevy_asset", "bevy_scene"] }
+bevy = { git = "https://github.com/bevyengine/bevy", default-features = false, features = ["bevy_asset", "bevy_scene"] }
 nalgebra = { version = "^0.32.0", features = [ "convert-glam022" ] }
 # Don't enable the default features because we don't need the ColliderSet/RigidBodySet
 rapier3d = "0.17.0"
